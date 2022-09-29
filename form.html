@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fullcontain{
+            width:1450px;
+            height: 800px;
+            border:none;
+            background-color: rgb(245, 240, 240);
+            margin-top:-30px;
+            margin-left:-10px;
+
+        }
+        .heading{
+            text-align: center;
+            font-family: calibri;
+            font-weight: bolder;
+            font-size: 40px;
+            
+        }
+        .subheading{
+            text-align: center;
+            font-size: larger;
+            margin-top: 5px;
+            font-family: calibri;
+            font-weight:500;
+        }
+        .formcontain{
+            width: 600px;
+            height:550px;
+            border: 1px solid rgb(87, 86, 86);
+            border-radius: 2px;
+            margin-top: 60px;
+            margin-left: 400px;
+            background-color: white;
+            padding-top: 30px;
+            padding-left: 40px;
+        }
+        input{
+            width: 560px;
+            height:30px;
+            margin-bottom: 25px;
+            margin-top: 10px;
+            
+        }
+        select{
+            width:560px;
+            height:40px;
+            margin-bottom: 25px;
+            margin-top: 10px;
+            font-family: calibri;
+            font-size: 17px;
+            padding-left: 5px;
+
+        }
+        label{
+            font-size: medium;
+            font-weight: bold;
+            margin-top:20px;
+            font-family:calibri;
+            font-size: large;
+            font-weight: 700;
+            
+        }
+        
+        #submitform{
+            width:80px;
+            height:40px;
+            background-color: rgb(0, 102, 150);
+            color: white;
+            font-size: small;
+            border:none;
+            border-radius: 3px;
+            margin-top:0px;
+        }
+        #messageinput{
+            height: 100px;
+        }
+        textarea{
+          width:560px;
+          height:150px;
+          margin-bottom:15px;
+          font-family: calibri;
+          font-size:large;
+        }
+        
+    </style>
+</head>
+<body>
+ <div class = "fullcontain">      
+    <h1 class = "heading">Contact us</h1>
+    <p class = "subheading">  Got a question? We'd love to hear from you.
+        Send us a message and <br> we'll respond as soon as possible.
+    </p>
+    <div class="formcontain">
+    <form>
+        <label class="label">What can we help you with?</label><br>
+         <select class="select">
+            <option value = "select what we can help you with" selected>Select what we can help you with</option>
+            <option value="portrait photography">portrait photography</option>
+            <option value="Wedding Photography">Wedding Photography</option>
+            <option value="Events">Events</option>
+            <option value="Others">Others</option>
+         </select><br>
+         <label class="label">Name</label><br>
+         <input type="text" ><br>
+         <label class="label">Email</label><br>
+         <input type="email"><br>
+         <label class="label">Message</label><br>
+         <textarea></textarea><br>
+         <input type="submit" value="Send" id="submitform">
+    </form>
+    </div>
+</div>
+</body>
+</html>
